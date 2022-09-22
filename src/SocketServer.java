@@ -35,7 +35,7 @@ public class SocketServer implements Runnable {
 
                 //get message from client
                 String sRecieveMessage = reader.readLine();
-                System.out.println("[Server] message recieved from client: " + sRecieveMessage);
+                System.out.println("[Server] message received from client: " + sRecieveMessage);
 
                 //Send reply back to client.
                 writer.println("Server received your message: " + sRecieveMessage);
