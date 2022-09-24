@@ -1,6 +1,4 @@
 import java.net.InetAddress;
-import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -10,7 +8,7 @@ Enter the command: java –jar <ExecutableJarFileName>.jar.
 Verify the result.
  */
 
-public class SocketTest {
+public class SocketManager {
     public static void main(String[] args) throws Exception {
         InetAddress ip = InetAddress.getLocalHost();
         String myIP;
