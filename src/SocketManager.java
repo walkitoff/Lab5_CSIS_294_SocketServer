@@ -41,7 +41,7 @@ public class SocketManager {
         while(true){
             //Get message to send
             TimeUnit.SECONDS.sleep(1);
-            System.out.print("Enter three Comma Delimited Integers: ");
+            System.out.print("Enter three INTEGERS to send to Server, separated by commas: ");
             String sMessage = new Scanner(System.in).nextLine();
 
             SocketClient oClient = new SocketClient();
