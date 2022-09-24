@@ -18,7 +18,7 @@ public class SocketManager {
 
         //get IP address of server to connect to
         System.out.println("Your IP is: " + myIP);
-        System.out.print("Enter 1 to connect to this IP or 2 to input manually: ");
+        System.out.print("Enter 1 to connect to this IP or 2 to input a Different Address: ");
         if(new Scanner(System.in).nextInt() == 1){
            sOtherServerIP = myIP;
            System.out.println("accepted IP: " + sOtherServerIP);
@@ -41,7 +41,7 @@ public class SocketManager {
         while(true){
             //Get message to send
             TimeUnit.SECONDS.sleep(1);
-            System.out.print("Enter message: ");
+            System.out.print("Enter three Comma Delimited Integers: ");
             String sMessage = new Scanner(System.in).nextLine();
 
             SocketClient oClient = new SocketClient();
